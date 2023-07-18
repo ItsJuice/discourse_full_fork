@@ -219,6 +219,10 @@ zh_CN:
         other: "抱歉，我们无法为此网页生成预览，因为找不到以下 oEmbed / OpenGraph 标签：%{missing_attributes}"
   word_connector:
     comma: "，"
+  custom_fields:
+    validations:
+      max_items: "该实体的自定义字段已达到最大数量 (%{max_items_number})"
+      max_value_length: "已达到自定义字段值的最大长度 (%{max_value_length})"
   invite:
     expired: "您的邀请令牌已过期。请<a href='%{base_url}/about'>联系管理人员</a>。"
     not_found: "您的邀请令牌无效。请<a href='%{base_url}/about'>联系管理人员</a>。"
@@ -1325,6 +1329,7 @@ zh_CN:
     image_magick_warning: '服务器被配置为创建大图片缩略图，但是未安装 ImageMagick。使用您喜爱的软件包管理器安装 ImageMagick 或<a href="https://www.imagemagick.org/script/download.php" target="_blank">下载最新版</a>。'
     failing_emails_warning: '%{num_failed_jobs} 个电子邮件作业失败。请检查您的 app.yml 并确保邮件服务器设置正确。<a href="%{base_path}/sidekiq/retries" target="_blank">在 Sidekiq 中查看失败的作业</a>。'
     subfolder_ends_in_slash: "您的子目录设置不正确；DISCOURSE_RELATIVE_URL_ROOT 以斜杠结尾。"
+    outdated_translations_warning: "您的某些自定义文本已过时。请检查您的 <a href='%{base_path}/admin/customize/site_texts?outdated=true'>自定义文本</a>。"
     email_polling_errored_recently:
       other: "电子邮件轮询在过去的 24 小时内产生了 %{count} 个错误。查看<a href='%{base_path}/logs' target='_blank'>日志</a>，了解更多详细信息。"
     missing_mailgun_api_key: "服务器被配置为通过 Mailgun 发送电子邮件，但是您尚未提供用于验证网络钩子消息的 API 密钥。"
@@ -1401,8 +1406,11 @@ zh_CN:
     fixed_category_positions_on_create: "如果选中，将在话题创建对话框中维护类别排序（需要 fixed_category_positions）。"
     add_rel_nofollow_to_user_content: '将 rel nofollow 属性添加到提交的所有用户内容，除了内部链接（包括父网域）。如果您更改此设置，则必须使用“rake posts:rebake”重新发布所有帖子。'
     exclude_rel_nofollow_domains: "不应将 nofollow 添加到链接的网域列表。example.com 也会自动允许 sub.example.com。至少，您应该添加此站点的网域以帮助网络抓取工具查找所有内容。如果您的网站的其他部分位于其他网域，也可以添加这些部分。"
+    max_form_template_title_length: "表单模板标题允许的最大长度。"
+    max_form_template_content_length: "表单模板内容允许的最大长度。"
     post_excerpt_maxlength: "帖子摘录/摘要的最大长度。"
     topic_excerpt_maxlength: "从话题中的第一个帖子生成的话题摘录/摘要的最大长度。"
+    default_subcategory_on_read_only_category: "在只读类别里启用 \"新主题 \"按钮，并选择一个允许用户发布的默认的子类别。"
     show_pinned_excerpt_mobile: "在移动视图中显示置顶话题的摘录。"
     show_pinned_excerpt_desktop: "在桌面视图中显示置顶话题的摘录。"
     post_onebox_maxlength: "Onebox Discourse 帖子的最大长度（以字符为单位）。"
@@ -1746,7 +1754,7 @@ zh_CN:
     title_min_entropy: "话题标题所需的最小熵（唯一字符，非英语计数更多）。"
     body_min_entropy: "帖子正文所需的最小熵（唯一字符，非英语计数更多）。"
     allow_uppercase_posts: "允许在话题标题或帖子正文中全部使用大写字母。"
-    max_consecutive_replies: "用户在被阻止添加另一个回复之前必须在话题中连续发布的帖子数。"
+    max_consecutive_replies: "用户在被阻止添加另一个回复之前可以在主题中连续发布的帖子数。此限制不适用于主题所有者、站点工作人员或类别管理员。"
     enable_filtered_replies_view: '“(n) 回复”按钮会收起所有其他帖子，仅显示当前帖子及其回复。'
     title_fancy_entities: "将常见的 ASCII 字符转换为话题标题中的花哨 HTML 实体，又称为 SmartyPants <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "检查有无类似话题之前的标题的最小长度。"
@@ -2036,6 +2044,7 @@ zh_CN:
     default_tags_watching_first_post: "默认将关注每个新话题中的第一个帖子的标签列表。"
     default_text_size: "默认选择的文本大小"
     default_title_count_mode: "页面标题计数器的默认模式"
+    enable_offline_indicator: "当检测到用户没有网络连接时，向他们显示一条消息"
     retain_web_hook_events_period_days: "保留网络钩子事件记录的天数。"
     retry_web_hook_events: "自动重试失败的网络钩子事件 4 次。重试之间的时间间隔为 1、5、25 和 125 分钟。"
     revoke_api_keys_days: "未使用的 API 密钥被自动撤消前的天数（0 表示从不撤消）"

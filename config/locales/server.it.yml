@@ -1683,6 +1683,7 @@ it:
     s3_secret_access_key: "L'Amazon S3 secret access key che verrà utilizzata per caricare immagini, allegati e backup."
     s3_region: "Il nome della regione Amazon S3 che verrà utilizzato per caricare immagini e backup."
     s3_cdn_url: "URL della CDN da usare per tutte le risorse s3 (ad esempio: https://cdn.somewhere.com). ATTENZIONE: dopo aver cambiato questa impostazione devi aggiornare tutti i vecchi messaggi."
+    s3_use_cdn_url_for_all_uploads: "Usa l'URL CDN per tutti i file caricati su s3 invece che solo per le immagini."
     avatar_sizes: "Elenco delle dimensioni degli avatar, generate automaticamente."
     external_system_avatars_enabled: "Utilizza un servizio esterno per gli avatar."
     external_system_avatars_url: "URL del servizio esterno di avatar. Le sostituzioni consentite sono {username} {first_letter} {color} {size}"
@@ -1767,7 +1768,7 @@ it:
     title_min_entropy: "Minima entropia (caratteri unici) richiesti come titolo di un argomento."
     body_min_entropy: "Minima entropia (caratteri unici) richiesti come corpo di un messaggio."
     allow_uppercase_posts: "Permetti l'uso di tutti caratteri maiuscoli nel titolo di argomento o nel corpo di un messaggio. "
-    max_consecutive_replies: "Numero di messaggi consecutivi che un utente deve scrivere in un Argomento prima di impedirgli di aggiungere un'altra risposta."
+    max_consecutive_replies: "Numero di post consecutivi che un utente può inserire in un argomento prima che gli venga impedito di aggiungere un'altra risposta. Questo limite non si applica al proprietario dell'argomento, allo staff del sito o ai moderatori di categoria."
     enable_filtered_replies_view: 'Il pulsante "(n) risposte" comprime tutti gli altri messaggi e mostra solo quello corrente e le sue risposte.'
     title_fancy_entities: "Converti i comuni caratteri ASCII in fantasiose entità HTML nei titoli degli argomenti, come in SmartyPants <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "Lunghezza minima di un titolo che attiva il controllo su argomenti simili."
@@ -2101,6 +2102,7 @@ it:
     navigation_menu: "Determina quale menu di navigazione utilizzare. La barra laterale e la navigazione dell'intestazione sono personalizzabili dagli utenti. L'opzione Compatibile è disponibile per la compatibilità con le versioni precedenti."
     enable_experimental_hashtag_autocomplete: "SPERIMENTALE: utilizza il nuovo sistema di completamento automatico degli #hashtag per categorie ed etichette che rende l'elemento selezionato in modo diverso e con ricerca migliorata"
     experimental_search_menu_groups: "SPERIMENTALE: attiva il nuovo menu di ricerca che è stato aggiornato per utilizzare glimmer."
+    enable_experimental_lightbox: "SPERIMENTALE: sostituisci la lightbox dell'immagine predefinita con il design rinnovato."
     errors:
       invalid_css_color: "Colore non valido. Immettere un nome o un valore esadecimale per il colore."
       invalid_email: "Indirizzo email non valido."

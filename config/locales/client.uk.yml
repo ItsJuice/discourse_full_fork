@@ -1933,8 +1933,7 @@ uk:
       pause_notifications: "Призупинити сповіщення"
       remove_status: "Видалити статус"
     user_tips:
-      primary: "Зрозуміло!"
-      secondary: "не показувати ці поради"
+      button: "Зрозуміло!"
       first_notification:
         title: "Ваше перше сповіщення!"
         content: "Сповіщення використовуються для того, щоб тримати вас в курсі того, що відбувається в спільноті."
@@ -2019,7 +2018,6 @@ uk:
       no_internet: "Немає з’єднання з Інтернетом."
       refresh_page: "Оновити сторінку"
     summary:
-      enabled_description: "Ви переглядаєте витяг з теми – тільки найцікавіші дописи на думку спільноти."
       description:
         one: "Тут <b>%{count}</b> відповідь."
         few: "Тут <b>%{count}</b> відповіді."
@@ -2028,8 +2026,6 @@ uk:
       description_time_MF: |
         Тут є {replyCount, plural, one {<b>#</b> відповідь} few {<b>#</b> відповіді} many {<b>#</b> відповідей} other {<b>#</b> відповідей}} з розрахунковим часом читання <b>{readingTime, plural, one {# хвилина} few {# хвилини} many {# хвилин} other {# хвилин}}</b>.
       disable: "Показати всі дописи"
-      short_label: "Підсумок"
-      short_title: "Показати підсумок цієї теми: найцікавіші дописи, визначені спільнотою"
     deleted_filter:
       enabled_description: "Ця тема містить видалені дописи, які були сховані."
       disabled_description: "Показуються видалені дописи в темі."
@@ -3666,7 +3662,6 @@ uk:
       filtered_replies:
         viewing_posts_by: "Перегляд %{post_count} дописів від"
         viewing_subset: "Деякі відповіді згорнуті"
-        viewing_summary: "Перегляд резюме цієї теми"
         post_number: "%{username}, допис #%{post_number}"
         show_all: "Показати всі"
       share:
@@ -4071,6 +4066,9 @@ uk:
       close: "Закрити (Esc)"
       content_load_error: '<a href="%url%">Вміст</a> не вдалося завантажити.'
       image_load_error: '<a href="%url%">Зображення</a> не вдалося завантажити.'
+    experimental_lightbox:
+      buttons:
+        close: "Закрити (Esc)"
     cannot_render_video: Це відео неможливо відтворити, оскільки ваш браузер не підтримує цей кодек.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "

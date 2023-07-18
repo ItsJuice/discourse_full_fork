@@ -1729,8 +1729,7 @@ fi:
       pause_notifications: "Keskeytä ilmoitukset"
       remove_status: "Poista tila"
     user_tips:
-      primary: "Selvä!"
-      secondary: "älä näytä minulle näitä vinkkejä"
+      button: "Selvä!"
       first_notification:
         title: "Ensimmäinen ilmoituksesi!"
         content: "Ilmoitusten avulla pysyt ajan tasalla siitä, mitä yhteisössä tapahtuu."
@@ -1746,6 +1745,8 @@ fi:
       suggested_topics:
         title: "Jatka lukemista!"
         content: "Tässä on muutamia ketjuja, joita saatat haluta lukea seuraavaksi."
+      admin_guide:
+        button: "Mennään!"
     loading: "Ladataan..."
     errors:
       prev_page: "yrittäessä ladata"
@@ -1813,15 +1814,17 @@ fi:
       no_internet: "Ei Internet-yhteyttä."
       refresh_page: "Päivitä sivu"
     summary:
-      enabled_description: "Tarkastelet yhteenvetoa tästä ketjusta, sen mielenkiintoisimpia viestejä käyttäjien toiminnan perusteella."
+      in_progress: "Tekoäly tiivistää aihetta..."
+      summarized_on: "Tiivistänyt %{method} %{date}"
       description:
         one: "Ketjussa on <b>%{count}</b> vastaus."
         other: "Ketjussa on <b>%{count}</b> vastausta."
       description_time_MF: |
         Ketjussa {replyCount, plural, one {on <b>#</b> vastaus} other {on <b>#</b> vastausta}}, joiden arvioitu lukuaika on <b>{readingTime, plural, one {# minuutti} other {# minuuttia}}</b>.
       disable: "Näytä kaikki viestit"
-      short_label: "Tee yhteenveto"
-      short_title: "Näytä tämän ketjun yhteenveto: mielenkiintoisimmat viestit käyttäjien toiminnan perusteella"
+      strategy:
+        hide_button_title: "Piilota yhteenveto"
+        button_title: "Tekoälyn tiivistämä"
     deleted_filter:
       enabled_description: "Tämä ketju sisältää poistettuja viestejä, jotka on piilotettu."
       disabled_description: "Ketjun poistetut viestit näytetään."
@@ -3269,7 +3272,6 @@ fi:
       filtered_replies:
         viewing_posts_by: "Katsellaan %{post_count} viestiä käyttäjältä"
         viewing_subset: "Jotkin vastaukset on kutistettu"
-        viewing_summary: "Katsellaan ketjun yhteenvetoa"
         post_number: "%{username}, viesti #%{post_number}"
         show_all: "Näytä kaikki"
       share:
@@ -3639,6 +3641,20 @@ fi:
       close: "Sulje (Esc)"
       content_load_error: '<a href="%url%">Sisällön</a> lataaminen ei onnistunut.'
       image_load_error: '<a href="%url%">Kuvan</a> lataaminen ei onnistunut.'
+    experimental_lightbox:
+      image_load_error: "Kuvaa ei voitu ladata."
+      screen_reader_image_title: "Kuva %{current}/%{total}: %{title}"
+      buttons:
+        next: "Seuraava (oikealle- tai alas-nuolinäppäin)"
+        previous: "Edellinen (vasemmalle- tai ylös-nuolinäppäin)"
+        close: "Sulje (Esc)"
+        download: "Lataa kuva"
+        newtab: "Avaa kuva uuteen välilehteen"
+        zoom: "Lähennä/loitonna kuvaa (Z-näppäin)"
+        rotate: "Kierrä kuvaa (R-näppäin)"
+        fullscreen: "Kytke selaimen koko näytön tila (M-näppäin)"
+        carousel: "Näytä kaikki kuvat karusellissa (A-näppäin)"
+        retry: "Yritä ladata kuva uudelleen"
     cannot_render_video: Tätä videota ei voida toistaa, koska selaimesi ei tue tarvittavaa koodekkia.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "

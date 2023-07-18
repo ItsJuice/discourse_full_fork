@@ -642,6 +642,7 @@ de:
       :handshake: **Beitrage** bei, indem du kommentierst, deine eigene Sichtweise mitteilst, Fragen stellst oder in der Diskussion Feedback gibst. Bevor du antwortest oder neue Themen beginnst, lies bitte die [Community Guidelines](%{base_path}/faq).
 
       > Wenn du Hilfe brauchst oder einen Vorschlag hast, kannst du unter [#feedback](%{base_path}/c/site-feedback) oder [contact the admins](%{base_path}/about) fragen.
+  admin_quick_start_title: "Administratorhandbuch: Erste Schritte"
   category:
     topic_prefix: "Über die Kategorie %{category}"
     replace_paragraph: "(Ersetze diesen ersten Absatz mit einer kurzen Beschreibung deiner neuen Kategorie. Diese Orientierung wird in der Kategorienauswahl angezeigt, versuche also, weniger als 200 Zeichen zu benutzen.)"
@@ -1736,6 +1737,7 @@ de:
     s3_secret_access_key: "Der „secret access key“ für Amazon S3, der für den Upload von Bildern, Anhängen und Backups verwendet wird."
     s3_region: "Der Name der Amazon-S3-Region, die für das Hochladen von Bildern und Backups verwendet wird."
     s3_cdn_url: "Die CDN-URL für alle S3-Assets (bspw. https://cdn.somewhere.com). ACHTUNG: Nachdem diese Einstellung geändert wurde, musst du alle alten Beiträge neu generieren."
+    s3_use_cdn_url_for_all_uploads: "Verwende die CDN-URL für alle Dateien, die auf s3 hochgeladen werden, anstatt nur für Bilder."
     avatar_sizes: "Liste der automatisch generierten Avatar-Größen."
     external_system_avatars_enabled: "Nutze einen externen System-Avatar-Dienst."
     external_system_avatars_url: "URL des externen System-Avatar-Dienstes. Erlaubte Platzhalter sind {username} {first_letter} {color} {size}"
@@ -1822,7 +1824,7 @@ de:
     title_min_entropy: "Für Titel neuer Themen minimal erforderliche Entropie (einzigartige Zeichen)."
     body_min_entropy: "Für den Text neuer Beiträge minimal erforderliche Entropie (einzigartige Zeichen)."
     allow_uppercase_posts: "Beiträge oder Titel von Themen mit ausschließlich Großschreibweise erlauben."
-    max_consecutive_replies: "Anzahl an aufeinanderfolgenden Beiträgen, die ein Benutzer in einem Thema schreiben kann, bevor eine weitere Antwort verhindert wird."
+    max_consecutive_replies: "Anzahl der Beiträge, die ein Benutzer in einem Thema hintereinander schreiben kann, bevor er keine weitere Antwort mehr hinzufügen kann. Dieses Limit gilt nicht für den Themenbesitzer, die Mitarbeiter der Website oder die Moderatoren der Kategorie."
     enable_filtered_replies_view: 'Die Schaltfläche „(n) Antworten“ klappt alle anderen Beiträge zusammen und zeigt nur den aktuellen Beitrag und seine Antworten.'
     title_fancy_entities: "Konvertiere in Thementiteln gewöhnliche ASCII-Zeichen in schicke HTML-Entities gemäß SmartyPants <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "Minimale Länge eines Titels, bevor nach ähnlichen Titeln gesucht wird."
@@ -2183,6 +2185,7 @@ de:
     enable_custom_sidebar_sections: "EXPERIMENTELL: Aktiviere benutzerdefinierte Seitenleistenabschnitte"
     experimental_topics_filter: "EXPERIMENTELL: Aktiviert die Filterroute für experimentelle Themen unter /filter"
     experimental_search_menu_groups: "EXPERIMENTELL: Aktiviert das neue Suchmenü, das für die Verwendung von Glimmer aktualisiert wurde"
+    enable_experimental_lightbox: "EXPERIMENTELL: Ersetze den Standard-Bild-Leuchtkasten durch das überarbeitete Design."
     page_loading_indicator: "Konfiguriere die Ladeanzeige, die bei der Seitennavigation in Discourse erscheint. \"Spinner\" ist ein ganzseitiger Indikator. \"Slider\" zeigt einen schmalen Balken am oberen Rand des Bildschirms an."
     errors:
       invalid_css_color: "Ungültige Farbe. Gib einen Farbnamen oder einen Hexadezimalwert ein."

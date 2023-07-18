@@ -128,6 +128,8 @@ tr_TR:
       and_x_others:
         one: "ve %{count} üye daha"
         other: "ve %{count} üye daha"
+    summaries:
+      no_targets: "Seçilen dönemde hiç mesaj yok."
   discourse_push_notifications:
     popup:
       chat_mention:

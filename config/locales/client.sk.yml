@@ -1147,7 +1147,6 @@ sk:
       sign_up: "Registrovať sa"
       hide_forever: "nie, ďakujem"
     summary:
-      enabled_description: "Pozeráte sa na zhrnutie tejto témy: najzaujímavejšie príspevky podľa výberu komunity."
       disable: "Zobraziť všetky príspevky"
     deleted_filter:
       enabled_description: "Táto téma obsahuje zmazané príspevky, ktoré boli skryté."

@@ -1703,6 +1703,7 @@ tr_TR:
     s3_secret_access_key: "Görüntüleri, ekleri ve yedeklemeleri yüklemek için kullanılacak Amazon S3 gizli erişim anahtarı."
     s3_region: "Görüntüleri ve yedeklemeleri yüklemek için kullanılacak Amazon S3 bölge adı."
     s3_cdn_url: "Tüm s3 varlıkları için kullanılacak CDN URL'si (örneğin: https://cdn.somewhere.com). UYARI: Bu ayarı değiştirdikten sonra tüm eski gönderileri yeniden oluşturmanız gerekir."
+    s3_use_cdn_url_for_all_uploads: "CDN URL'sini yalnızca resimler için değil, s3'e yüklenen tüm dosyalar için kullanın."
     avatar_sizes: "Otomatik olarak oluşturulan avatar boyutlarının listesi."
     external_system_avatars_enabled: "Harici sistem avatarları hizmetini kullanın."
     external_system_avatars_url: "Harici sistem avatarları hizmetinin URL'si. İzin verilen ikameler şunlardır: {username} {first_letter} {color} {size}"
@@ -1788,7 +1789,7 @@ tr_TR:
     title_min_entropy: "Bir konu başlığı için gereken minimum entropi (benzersiz karakterler, daha fazlası için İngilizce olmayan sayısı)."
     body_min_entropy: "Bir gönderi gövdesi için gereken minimum entropi (benzersiz karakterler, daha fazlası için İngilizce olmayan sayısı)."
     allow_uppercase_posts: "Bir konu başlığında veya gönderi gövdesinde tümü büyük harfe izin verin."
-    max_consecutive_replies: "Bir kullanıcının başka bir yanıt eklemesi engellenmeden önce bir konuda arka arkaya yapması gereken gönderi sayısı."
+    max_consecutive_replies: "Bir kullanıcının başka bir yanıt eklemesi engellenmeden önce bir konuda yapabileceği art arda gönderi sayısı. Bu sınır, konu sahibi, site personeli veya kategori moderatörleri için geçerli değildir."
     enable_filtered_replies_view: '"(n) yanıtlar" düğmesi diğer tüm gönderileri daraltır ve yalnızca geçerli gönderiyi ve yanıtlarını gösterir.'
     title_fancy_entities: "SmartyPants gibi yaygın ASCII karakterlerini konu başlıklarında süslü HTML varlıklarına dönüştürün <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "Benzer konular için kontrol edilmeden önce bir başlığın minimum uzunluğu."
@@ -2130,6 +2131,7 @@ tr_TR:
     experimental_new_new_view_groups: 'DENEYSEL: Okunmamış ve yeni konuları birleştiren bir yeni konular listesi etkinleştirin ve kenar çubuğundaki "Her şey" bağlantısını buna bağlayın.'
     enable_custom_sidebar_sections: "DENEYSEL: Özel kenar çubuğu bölümlerini etkinleştir"
     experimental_topics_filter: "DENEYSEL: /filter konumunda deneysel konu filtrelemeyi etkinleştirir"
+    enable_experimental_lightbox: "DENEYSEL: Varsayılan görüntü lightboxını yenilenen tasarımla değiştir."
     page_loading_indicator: "Discourse içinde sayfa geçişleri sırasında görünen yükleme göstergesini yapılandırın. 'Spinner' tam sayfa görünür. 'Slider' ekranın üst kısmında dar bir çubuk şekilde görünür."
     errors:
       invalid_css_color: "Geçersiz renk. Bir renk adı veya hex değeri girin."

@@ -1701,8 +1701,7 @@ it:
       pause_notifications: "Metti in pausa le notifiche"
       remove_status: "Rimuovi lo stato"
     user_tips:
-      primary: "Fatto!"
-      secondary: "non mostrarmi questi suggerimenti"
+      button: "Ho capito!"
       first_notification:
         title: "La tua prima notifica!"
         content: "Le notifiche vengono utilizzate per tenerti aggiornato su ciò che sta accadendo nella community."
@@ -1718,6 +1717,8 @@ it:
       suggested_topics:
         title: "Continua a leggere!"
         content: "Ecco alcuni argomenti che riteniamo gradiresti leggere in seguito."
+      admin_guide:
+        button: "Andiamo!"
     loading: " Caricamento..."
     errors:
       prev_page: "durante il caricamento"
@@ -1782,15 +1783,19 @@ it:
       intro: "Ciao! Sembra che la discussione ti interessi, ma non hai ancora registrato un account."
       value_prop: "Non ti piace dover scorrere gli stessi messaggi? Quando crei un account, riprenderai sempre dall'ultimo messaggio letto. Potrai anche ricevere notifiche di nuove risposte, salvare segnalibri e usare i \"mi piace\" per ringraziare gli altri. Possiamo lavorare tutti insieme per rendere questa community un posto fantastico. :heart:"
     summary:
-      enabled_description: "Stai visualizzando un riepilogo dell'argomento: è la comunità a determinare quali sono i messaggi più interessanti."
+      in_progress: "Riepilogo dell'argomento utilizzando l'AI in corso..."
+      summarized_on: "Riassunto con %{method} su %{date}"
+      enabled_description: "Stai visualizzando le risposte principali di questo argomento: i post più interessanti secondo quanto stabilito dalla community."
       description:
         one: "C'è <b>%{count}</b> risposta."
         other: "Ci sono <b>%{count}</b> risposte."
       description_time_MF: |
         {replyCount, plural, one {C'è <b>#</b> risposta} other {Ci sono <b>#</b> risposte}} con un tempo di lettura stimato di <b>{readingTime, plural, one {# minuto} other {# minuti}}</b>.
       disable: "Mostra Tutti i Messaggi"
-      short_label: "Riassumi"
-      short_title: "Mostra un riassunto di questo argomento: i messaggi più interessanti secondo la community"
+      short_label: "Migliori risposte"
+      short_title: "Mostra le risposte principali di questo argomento: i post più interessanti secondo quanto stabilito dalla community"
+      strategy:
+        button_title: "Riassumi con l'intelligenza artificiale"
     deleted_filter:
       enabled_description: "Questo argomento contiene messaggi eliminati, che sono quindi nascosti."
       disabled_description: "I messaggi eliminati di questo argomento sono ora visibili."
@@ -3236,7 +3241,7 @@ it:
       filtered_replies:
         viewing_posts_by: "Visualizzazione di %{post_count} messaggi di"
         viewing_subset: "Alcune risposte sono compresse"
-        viewing_summary: "Visualizza un riepilogo di questo argomento"
+        viewing_summary: "Leggendo le risposte principali di questo argomento"
         post_number: "%{username}, messaggio n. %{post_number}"
         show_all: "Mostra tutto"
       share:
@@ -3606,6 +3611,20 @@ it:
       close: "Chiudi (Esc)"
       content_load_error: 'Caricamento <a href="%url%">del contenuto</a> non riuscito.'
       image_load_error: 'Caricamento <a href="%url%">dell''immagine</a> non riuscito.'
+    experimental_lightbox:
+      image_load_error: "Caricamento dell'immagine non riuscito."
+      screen_reader_image_title: "Immagine %{current} di %{total}: %{title}"
+      buttons:
+        next: "Successivo (tasto freccia destra o giù)"
+        previous: "Precedente (tasto freccia sinistra o freccia su)"
+        close: "Chiudi (Esc)"
+        download: "Scarica l'immagine"
+        newtab: "Apri l'immagine in una nuova scheda"
+        zoom: "Zoom immagine in/out (tasto Z)"
+        rotate: "Ruota immagine (tasto R)"
+        fullscreen: "Attiva/Disattiva modalità a schermo intero del browser (tasto M)"
+        carousel: "Visualizza tutte le immagini in un carosello (tasto A)"
+        retry: "Riprova a caricare l'immagine"
     cannot_render_video: Questo video non può essere visualizzato perché il tuo browser non supporta il codec.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "
@@ -3950,6 +3969,7 @@ it:
         custom:
           save: "Salva"
           delete: "Elimina"
+          always_public: "Il contenuto di questa sezione è sempre pubblico"
           links:
             reset: "Ripristina impostazioni predefinite"
             icon:

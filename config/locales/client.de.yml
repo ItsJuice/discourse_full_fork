@@ -189,6 +189,7 @@ de:
     software_update_prompt:
       message: "Wir haben ein Update dieser Website durchgeführt. <span>Bitte aktualisiere</span>, da es sonst zu unerwartetem Verhalten kommen kann."
       dismiss: "Verwerfen"
+    bootstrap_mode: "Erste Schritte"
     themes:
       default_description: "Standard"
       broken_theme_alert: "Deine Website funktioniert vielleicht nicht, weil ein Theme/eine Komponente Fehler hat."
@@ -1770,8 +1771,7 @@ de:
       pause_notifications: "Benachrichtigungen pausieren"
       remove_status: "Status entfernen"
     user_tips:
-      primary: "Verstanden!"
-      secondary: "diese Tipps nicht anzeigen"
+      button: "Verstanden!"
       first_notification:
         title: "Deine erste Benachrichtigung!"
         content: "Benachrichtigungen dienen dazu, dich auf dem Laufenden zu halten, was in der Community passiert."
@@ -1787,6 +1787,10 @@ de:
       suggested_topics:
         title: "Lies weiter!"
         content: "Hier sind einige Themen, von denen wir denken, dass du sie als Nächstes lesen möchtest."
+      admin_guide:
+        title: "Willkommen auf deiner neuen Website!"
+        content: "Lies den Admin-Leitfaden, um deine Seite und deine Community weiter auszubauen."
+        button: "Los geht's!"
     loading: "Wird geladen …"
     errors:
       prev_page: "während des Ladens"
@@ -1854,7 +1858,7 @@ de:
       no_internet: "Keine Internetverbindung."
       refresh_page: "Seite aktualisieren"
     summary:
-      enabled_description: "Du siehst gerade eine Zusammenfassung des Themas: die interessantesten Beiträge, die von der Community bestimmt wurden."
+      enabled_description: "Du siehst dir die Top-Antworten zu diesem Thema an: die interessantesten Beiträge, die von der Community ermittelt wurden."
       description:
         one: "Es gibt <b>%{count}</b> Antwort."
         other: "Es gibt <b>%{count}</b> Antworten."
@@ -1862,11 +1866,10 @@ de:
         Es gibt {replyCount, plural, one {<b>#</b> Antwort} other {<b>#</b> Antworten}} mit einer geschätzten Lesezeit von <b>{readingTime, plural, one {# Minute} other {# Minuten}}</b>.
       enable: "Top-Antworten anzeigen"
       disable: "Alle Beiträge anzeigen"
-      short_label: "Zusammenfassen"
-      short_title: "Eine Zusammenfassung dieses Themas anzeigen: die laut der Community interessantesten Beiträge"
+      short_label: "Top Antworten"
+      short_title: "Top-Antworten zu diesem Thema anzeigen: die interessantesten Beiträge, wie von der Community ermittelt"
       strategy:
-        button_title: "Dieses Thema zusammenfassen"
-        title: "Zusammenfassung des Themas"
+        hide_button_title: "Zusammenfassung ausblenden"
     deleted_filter:
       enabled_description: "Dieses Thema enthält gelöschte Beiträge, die derzeit versteckt sind."
       disabled_description: "Gelöschte Beiträge werden in diesem Thema angezeigt."
@@ -3333,7 +3336,7 @@ de:
       filtered_replies:
         viewing_posts_by: "Zeige %{post_count} Beiträge von"
         viewing_subset: "Einige Antworten sind reduziert"
-        viewing_summary: "Eine Zusammenfassung dieses Themas anzeigen"
+        viewing_summary: "Top-Antworten zu diesem Thema anzeigen"
         post_number: "%{username}, Beitrag #%{post_number}"
         show_all: "Alle anzeigen"
       share:
@@ -3708,6 +3711,20 @@ de:
       close: "Schließen (Esc)"
       content_load_error: '<a href="%url%">Der Inhalt</a> konnte nicht geladen werden.'
       image_load_error: '<a href="%url%">Das Bild</a> konnte nicht geladen werden.'
+    experimental_lightbox:
+      image_load_error: "Das Bild konnte nicht geladen werden."
+      screen_reader_image_title: "Bild %{current} von %{total}: %{title}"
+      buttons:
+        next: "Weiter (Pfeiltaste rechts oder unten)"
+        previous: "Zurück (Pfeiltaste nach links oder oben)"
+        close: "Schließen (Esc)"
+        download: "Bild herunterladen"
+        newtab: "Bild in einer neuen Registerkarte öffnen"
+        zoom: "Bild vergrößern/verkleinern (Taste Z)"
+        rotate: "Bild drehen (Taste R)"
+        fullscreen: "Umschalten des Browser-Vollbildmodus (Taste M)"
+        carousel: "Alle Bilder in einem Karussell anzeigen (Taste A)"
+        retry: "Versuche das Bild erneut zu laden"
     cannot_render_video: Dieses Video kann nicht gerendert werden, da dein Browser den Codec nicht unterstützt.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "
@@ -4068,6 +4085,7 @@ de:
           delete_confirm: "Bist du sicher, dass du diesen Abschnitt löschen willst?"
           reset_confirm: "Bist du sicher, dass du diesen Abschnitt auf die Standardeinstellungen zurücksetzen willst?"
           public: "Mache diesen Bereich öffentlich und für alle sichtbar"
+          always_public: "Die Inhalte in diesem Bereich sind immer öffentlich"
           more_menu: "Mehr Menü"
           links:
             add: "Einen weiteren Link hinzufügen"
@@ -4121,6 +4139,7 @@ de:
           configure_defaults: "Standardeinstellungen konfigurieren"
         community:
           edit_section:
+            sidebar: "Diesen Abschnitt anpassen"
             header_dropdown: "Anpassen"
           links:
             about:

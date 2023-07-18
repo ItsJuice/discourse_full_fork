@@ -266,6 +266,8 @@ it:
         add_user_short: <span>Aggiungi utente</span>
         open_channel: <span>Apri canale</span>
         default_search_placeholder: "#uncanale, @qualcuno o altro"
+        default_channel_search_placeholder: "#un-canale"
+        default_user_search_placeholder: "@qualcuno"
         user_search_placeholder: "...aggiungi altri utenti"
         disabled_user: "ha disabilitato la chat"
         no_items: "Nessun elemento"
@@ -485,6 +487,7 @@ it:
           one: "+%{count}"
           other: "+%{count}"
       threads:
+        open: "Apri Discussione"
         list: "Discussioni in corso"
         none: "Non stai partecipando a nessun thread in questo canale."
       draft_channel_screen:

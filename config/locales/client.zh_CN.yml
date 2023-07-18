@@ -1681,8 +1681,7 @@ zh_CN:
       pause_notifications: "暂停通知"
       remove_status: "移除状态"
     user_tips:
-      primary: "知道了！"
-      secondary: "不要为我显示这些提示"
+      button: "我知道了！"
       first_notification:
         title: "您的第一个通知！"
         content: "通知用于让您了解社区中发生的最新情况。"
@@ -1701,7 +1700,7 @@ zh_CN:
       admin_guide:
         title: "欢迎来到你的新网站！"
         content: "阅读管理指南以继续构建你的网站和社区。"
-        primary: "让我们开始吧！"
+        button: "让我们开始吧！"
     loading: "正在加载…"
     errors:
       prev_page: "无法加载"
@@ -1765,14 +1764,11 @@ zh_CN:
       intro: "您好！看起来您很喜欢讨论，但您还没有注册帐户。"
       value_prop: "厌倦了滚动浏览相同的帖子？当您创建帐户后，您将始终回到您离开的地方。使用帐户，您还可以收到新回复通知、保存书签，以及使用“赞”来感谢他人。我们可以共同努力，使这个社区变得更好。:heart:"
     summary:
-      enabled_description: "您正在查看此话题的摘要：社区确定的最有趣的帖子。"
       description:
         other: "有 <b>%{count}</b> 个回复。"
       description_time_MF: |
         有 {replyCount, plural, one {<b>#</b> 个回复} other {<b>#</b> 个回复}}，预计阅读时间为 <b>{readingTime, plural,one {# 分钟}other {# 分钟}}</b>。
       disable: "显示所有帖子"
-      short_label: "摘要"
-      short_title: "显示此话题的摘要：由社区决定的最有趣的帖子"
     deleted_filter:
       enabled_description: "此话题包含已删除的帖子，它们已被隐藏。"
       disabled_description: "已显示话题中已删除的帖子。"
@@ -3148,7 +3144,6 @@ zh_CN:
       filtered_replies:
         viewing_posts_by: "正在查看此用户的 %{post_count} 个帖子："
         viewing_subset: "某些回复已被收起"
-        viewing_summary: "正在查看此话题的摘要"
         post_number: "%{username}，帖子 #%{post_number}"
         show_all: "全部显示"
       share:
@@ -3508,6 +3503,9 @@ zh_CN:
       close: "关闭 (Esc)"
       content_load_error: '<a href="%url%">内容</a>无法加载。'
       image_load_error: '<a href="%url%">图片</a>无法加载。'
+    experimental_lightbox:
+      buttons:
+        close: "关闭 (Esc)"
     cannot_render_video: 无法呈现此视频，因为您的浏览器不支持编解码器。
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: "，"

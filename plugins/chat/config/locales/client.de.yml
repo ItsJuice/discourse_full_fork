@@ -323,6 +323,8 @@ de:
         add_user_short: <span>Benutzer hinzufügen</span>
         open_channel: <span>Offener Kanal</span>
         default_search_placeholder: "#a-channel, @somebody oder irgendwas"
+        default_channel_search_placeholder: "#a-Kanal"
+        default_user_search_placeholder: "@somebody"
         user_search_placeholder: "... weitere Nutzer hinzufügen"
         disabled_user: "hat den Chat deaktiviert"
         no_items: "Keine Elemente"

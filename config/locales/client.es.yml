@@ -1720,8 +1720,7 @@ es:
       pause_notifications: "Pausar notificaciones"
       remove_status: "Quitar estado"
     user_tips:
-      primary: "¡Entendido!"
-      secondary: "no mostrarme estos consejos"
+      button: "¡Entendido!"
       first_notification:
         title: "¡Tu primera notificación!"
         content: "Las notificaciones se utilizan para mantenerte al día de lo que ocurre en la comunidad."
@@ -1804,15 +1803,12 @@ es:
       no_internet: "Sin conexión a Internet."
       refresh_page: "Actualizar página"
     summary:
-      enabled_description: "Estás viendo un resumen de este tema: las publicaciones más interesantes de acuerdo a la comunidad."
       description:
         one: "Hay <b>%{count}</b> respuesta."
         other: "Hay <b>%{count}</b> respuestas."
       description_time_MF: |
         Hay {replyCount, plural, one {Hay <b>#</b> respuesta} other {Hay <b>#</b> respuestas}} con un tiempo estimado de lectura de <b>{readingTime, plural, one {# minuto} other {# minutos}}</b>.
       disable: "Mostrar todas las publicaciones"
-      short_label: "Resumir"
-      short_title: "Muestra un resumen de este tema: los mensajes más interesantes según la comunidad"
     deleted_filter:
       enabled_description: "Este tema contiene publicaciones eliminadas que se han ocultado."
       disabled_description: "Se muestran las publicaciones eliminadas de este tema. "
@@ -3268,7 +3264,6 @@ es:
       filtered_replies:
         viewing_posts_by: "Viendo %{post_count} publicaciones de"
         viewing_subset: "Algunas respuestas no se muestran"
-        viewing_summary: "Estás viendo un resumen de este tema"
         post_number: "%{username}, publicación nº %{post_number}"
         show_all: "Mostrar todas"
       share:
@@ -3638,6 +3633,9 @@ es:
       close: "Cerrar (Esc)"
       content_load_error: '<a href="%url%">El contenido</a> no se pudo cargar.'
       image_load_error: '<a href="%url%">La imagen</a> no se pudo cargar.'
+    experimental_lightbox:
+      buttons:
+        close: "Cerrar (Esc)"
     cannot_render_video: Este vídeo no se puede mostrar porque tu navegador no es compatible con el códec.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "

@@ -1971,7 +1971,6 @@ ar:
     title_min_entropy: "الحد الأدنى للإنتروبيا (يتم احتساب الحروف الفريدة وغير الإنجليزية بأكثر من عددها) المطلوبة لعنوان الموضوع"
     body_min_entropy: "الحد الأدنى للإنتروبيا (يتم احتساب الحروف الفريدة وغير الإنجليزية بأكثر من عددها) المطلوبة لنص الموضوع"
     allow_uppercase_posts: "السماح بجميع بكتابة عنوان الموضوع أو نص المنشور بأكمله بأحرف كبيرة"
-    max_consecutive_replies: "عدد المنشورات التي يجب على المستخدم إنشاؤها على التوالي في موضوع قبل منعه من إضافة رد آخر"
     enable_filtered_replies_view: 'يؤدي الزر "(n) رد" إلى طي جميع المنشورات الأخرى وعرض المنشور الحالي والردود عليه فقط.'
     title_fancy_entities: "تحويل أحرف ASCII الشائعة إلى كيانات HTML خيالية في عناوين الموضوعات، مثل <a href='https://daringfireball.net/projects/smartypants/' target='_blank'>https://daringfireball.net/projects/smartypants/</a>"
     min_title_similar_length: "الحد الأدنى لطول العنوان قبل التحقُّق من وجود موضوعات مشابهة"

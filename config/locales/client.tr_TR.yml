@@ -1732,8 +1732,7 @@ tr_TR:
       pause_notifications: "Bildirimleri duraklat"
       remove_status: "Durumu kaldır"
     user_tips:
-      primary: "Anladım!"
-      secondary: "bana bu ipuçlarını gösterme"
+      button: "Anladım!"
       first_notification:
         title: "İlk bildiriminiz!"
         content: "Bildirimler, sizi toplulukta olup bitenlerden haberdar etmek için kullanılır."
@@ -1752,7 +1751,7 @@ tr_TR:
       admin_guide:
         title: "Yeni sitenize hoş geldiniz!"
         content: "Sitenizi ve topluluğunuzu oluşturmaya devam etmek için yönetici kılavuzunu okuyun."
-        primary: "Hadi başlayalım!"
+        button: "Hadi başlayalım!"
     loading: "Yükleniyor..."
     errors:
       prev_page: "şunu yüklemeye çalışırken:"
@@ -1817,7 +1816,9 @@ tr_TR:
       intro: "Merhaba! Tartışmanın tadını çıkarıyor gibisiniz, ancak henüz bir hesap açmadınız."
       value_prop: "Aynı gönderiler arasında gezinmekten bıktınız mı? Hesap oluşturduğunuzda kaldığınız yere geri dönebilirsiniz. Ayrıca hesabınız olursa yeni yanıtlar için bildirim alabilir, yer imlerini kaydedebilir ve başkalarına teşekkür etmek için beğenileri kullanabilirsiniz. Bu topluluğu harika kılmak için hep birlikte çalışabiliriz. :heart:"
     summary:
-      enabled_description: "Bu konunun bir özetini görüntülüyorsunuz: Topluluk tarafından belirlenen en ilginç gönderiler."
+      in_progress: "Yapay zeka kullanılarak konu özetleniyor..."
+      summarized_on: "%{method} yöntemiyle %{date} tarihinde özetlendi"
+      enabled_description: "Bu konunun en iyi yanıtlarını görüntülüyorsunuz: topluluk tarafından belirlenen en ilginç gönderiler."
       description:
         one: "<b>%{count}</b> yanıt var."
         other: "<b>%{count}</b> yanıt var."
@@ -1825,11 +1826,10 @@ tr_TR:
         Tahmini okuma süresi <b>{readingTime, plural, one {# dakika} other {# dakika}}</b> olan {replyCount, plural, one {<b># yanıt</b>} other {<b># yanıt</b>}} var.
       enable: "En iyi yanıtları göster"
       disable: "Tüm Gönderileri Göster"
-      short_label: "Özetle"
-      short_title: "Bu konunun özetini göster: Topluluk tarafından belirlenen en ilginç gönderiler"
+      short_label: "En iyi yanıtlar"
       strategy:
-        button_title: "Bu konuyu özetle"
-        title: "Konu özeti"
+        hide_button_title: "Özeti gizle"
+        button_title: "Yapay zeka ile özetle"
     deleted_filter:
       enabled_description: "Bu konu gizli durumdaki silinen gönderiler içeriyor."
       disabled_description: "Konudaki silinen gönderiler gösteriliyor."
@@ -3281,7 +3281,6 @@ tr_TR:
       filtered_replies:
         viewing_posts_by: "Şu kişinin %{post_count} gönderisi görüntüleniyor:"
         viewing_subset: "Bazı yanıtlar daraltıldı"
-        viewing_summary: "Bu konunun özeti görüntüleniyor"
         post_number: "%{username}, gönderi #%{post_number}"
         show_all: "Tümünü göster"
       share:
@@ -3652,6 +3651,20 @@ tr_TR:
       close: "Kapat (Esc)"
       content_load_error: '<a href="%url%">İçerik</a> yüklenemedi.'
       image_load_error: '<a href="%url%">Görüntü</a> yüklenemedi.'
+    experimental_lightbox:
+      image_load_error: "Resim yüklenemedi."
+      screen_reader_image_title: "Resim %{current} / %{total}: %{title}"
+      buttons:
+        next: "İleri (Sağ veya aşağı ok tuşu)"
+        previous: "Önceki (Sol veya yukarı ok tuşu)"
+        close: "Kapat (Esc)"
+        download: "Resmi indir"
+        newtab: "Resmi yeni bir sekmede aç"
+        zoom: "Görüntüyü yakınlaştır/uzaklaştır (Z tuşu)"
+        rotate: "Görüntüyü döndür (R tuşu)"
+        fullscreen: "Tarayıcı tam ekran modunu aç/kapat (M tuşu)"
+        carousel: "Tüm resimleri bir karuselde göster (A tuşu)"
+        retry: "Resmi yüklemeyi yeniden dene"
     cannot_render_video: Tarayıcınız codec'i desteklemediği için bu video işlenemiyor.
     keyboard_shortcuts_help:
       shortcut_key_delimiter_comma: ", "
