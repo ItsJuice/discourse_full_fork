@@ -15,7 +15,7 @@ import discourseComputed from "discourse-common/utils/decorators";
 import { makeArray } from "discourse-common/lib/helpers";
 import { popupAjaxError } from "discourse/lib/ajax-error";
 import { url } from "discourse/lib/computed";
-import ThemeUploadAddModal from "../components/theme-upload-add";
+import ThemeUploadAddModal from "../components/modal/theme-upload-add";
 
 const THEME_UPLOAD_VAR = 2;
 
