@@ -56,7 +56,6 @@ const KNOWN_LEGACY_MODALS = [
   "tag-upload",
   "topic-summary",
   "user-status",
-  "admin-add-upload",
   "admin-delete-posts-confirmation",
   "admin-incoming-email",
   "admin-merge-users-prompt",
