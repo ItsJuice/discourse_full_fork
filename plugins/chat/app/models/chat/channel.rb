@@ -74,6 +74,16 @@ module Chat
       def chatable_types
         public_channel_chatable_types + direct_channel_chatable_types
       end
+
+      def find_by_id_or_slug(id)
+        joins(
+          "LEFT JOIN categories ON categories.id = chat_channels.chatable_id AND chat_channels.chatable_type = 'Category'",
+        ).find_by(
+          "chat_channels.id = :id OR categories.slug = :slug OR chat_channels.slug = :slug",
+          id: Integer(id, exception: false),
+          slug: id.to_s.downcase,
+        )
+      end
     end
 
     statuses.keys.each do |status|

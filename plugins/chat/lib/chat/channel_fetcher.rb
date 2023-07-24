@@ -251,29 +251,13 @@ module Chat
     end
 
     def self.find_with_access_check(channel_id_or_name, guardian)
-      begin
-        channel_id_or_name = Integer(channel_id_or_name)
-      rescue ArgumentError
-      end
-
-      base_channel_relation =
-        Chat::Channel.includes(:chatable).joins(
-          "LEFT JOIN categories ON categories.id = chat_channels.chatable_id AND chat_channels.chatable_type = 'Category'",
-        )
+      base_channel_relation = Chat::Channel.includes(:chatable)
 
       if guardian.is_staff?
         base_channel_relation = base_channel_relation.includes(:chat_channel_archive)
       end
 
-      if channel_id_or_name.is_a? Integer
-        chat_channel = base_channel_relation.find_by(id: channel_id_or_name)
-      else
-        chat_channel =
-          base_channel_relation.find_by(
-            "LOWER(categories.name) = :name OR LOWER(chat_channels.name) = :name",
-            name: channel_id_or_name.downcase,
-          )
-      end
+      chat_channel = base_channel_relation.find_by_id_or_slug(channel_id_or_name)
 
       raise Discourse::NotFound if chat_channel.blank?
       raise Discourse::InvalidAccess if !guardian.can_join_chat_channel?(chat_channel)
