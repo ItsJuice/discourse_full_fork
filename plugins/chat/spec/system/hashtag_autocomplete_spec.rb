@@ -64,7 +64,9 @@ describe "Using #hashtag autocompletion to search for and lookup channels", type
         )
       expect(message).not_to eq(nil)
     end
-    expect(chat_channel_page).to have_message(id: message.id)
+    expect(chat_channel_page.messages).to have_message(id: message.id)
+
+    expect(page).to have_css(".hashtag-cooked[aria-label]", count: 3)
 
     cooked_hashtags = page.all(".hashtag-cooked", count: 3)
 

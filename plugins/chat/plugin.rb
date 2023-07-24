@@ -248,7 +248,16 @@ after_initialize do
       ).thread_unread_overview_by_channel
     end
 
-    Chat::ChannelIndexSerializer.new(structured, scope: self.scope, root: false).as_json
+    category_ids = structured[:public_channels].map { |c| c.chatable_id }
+    post_allowed_category_ids =
+      Category.post_create_allowed(self.scope).where(id: category_ids).pluck(:id)
+
+    Chat::ChannelIndexSerializer.new(
+      structured,
+      scope: self.scope,
+      root: false,
+      post_allowed_category_ids: post_allowed_category_ids,
+    ).as_json
   end
 
   add_to_serializer(
