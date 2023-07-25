@@ -12,5 +12,14 @@
   "remoteUser": "discourse",
   "remoteEnv": {
     "DISCOURSE_DEV_HOSTS": ".githubpreview.dev"
+  },
+  "customizations": {
+    "codespaces": {
+      "repositories": {
+        "ItsJuice/lp-community-bmw-theme-plugin": {
+          "permissions": "write-all"
+        }
+      }
+    }
   }
 }
